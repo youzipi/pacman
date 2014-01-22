@@ -19,7 +19,6 @@ $code-block
   background highlight-background
   margin 0.5em 0
   padding 0.5em 2%
-  overflow auto
   color highlight-foreground
   line-height line-height
   font-size 0.1em
@@ -42,6 +41,7 @@ $line-numbers
       padding 0
   .highlight
     @extend $code-block
+    overflow auto
     pre
       border none
       margin 0

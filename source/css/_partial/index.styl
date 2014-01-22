@@ -48,7 +48,7 @@
   background color-section
   text-align center
   overflow hidden
-  a, span
+  a
     display inline-block
     padding 0.5em 1em
   a
@@ -62,10 +62,21 @@
     transition border-left .5s
     &:hover
       border-left 0.5em solid color-theme
+    span:before
+      font-family font-icon-family
+      font-smoothing()
+      content "\f053"
+      padding-right 0.5em
   .next
     float right
+    span:before
+      font-family font-icon-family
+      font-smoothing()
+      content "\f054"
+      padding-left 0.5em
   .page-number
     display none
+    padding 0.5em 1em
     @media mini
       display inline-block
   .current
